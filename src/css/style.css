@@ -1,0 +1,122 @@
+.nft-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: var(--very-dark-blue-main-bg);
+}
+
+.nft-card__app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 310px;
+
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 2rem .5rem rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0rem 0rem 2rem .5rem rgba(0,0,0,0.4);
+  -moz-box-shadow: 0rem 0rem 2rem .5rem rgba(0,0,0,0.4);
+
+  background-color: var(--very-dark-blue-card-bg);
+  color: var(--soft-blue);
+
+  font-family: var(--outfit);
+  font-size: .85rem;
+}
+
+.nft-card__app__nft-image {
+  position: relative;
+  margin-bottom: 1rem;
+
+  border-radius: .5rem;
+}
+.nft-card__app__nft-image:hover{
+  
+}
+.nft-card__app__nft-image:hover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--cyan);
+}
+
+
+.nft-card__app__name {
+  margin-bottom: 1rem;
+  
+  color: var(--white);
+
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.nft-card__app__name:hover {
+  color: var(--cyan);
+}
+
+.nft-card__app__description {
+  margin-bottom: 1rem;
+
+  font-weight: 300;
+}
+
+.nft-card__app__price-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 1rem;
+  
+  font-size: 0.85rem;
+  text-indent: 0.5rem;
+}
+
+.nft-card__app__price-tag__price {
+  margin-right: auto;
+
+  color: var(--cyan);
+
+  font-weight: 600;
+}
+
+.nft-card__app__price-tag__time-left {
+  font-weight: 400;
+}
+
+.nft-card__app__author {
+  display: flex;
+  align-items: center;
+
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--very-dark-blue-line);
+}
+
+.nft-card__app__author__avatar {
+  width: 2.25rem;
+
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.nft-card__app__author__creator {
+  font-weight: 300;
+  text-indent: 1rem;
+}
+.nft-card__app__author__creator--span {
+  color: var(--white);
+  font-weight: 600;
+}
+.nft-card__app__author__creator--span:hover {
+  color: var(--cyan);
+}
